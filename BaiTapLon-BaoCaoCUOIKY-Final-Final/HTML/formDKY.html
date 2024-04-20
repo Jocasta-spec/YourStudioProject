@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng ký</title>
+
+    <link href="../Bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/formDky.css">
+    <link rel="stylesheet" href="../CSS/hfshare.css">
+    <script src="../JS/jquery-3.3.1.min.js"></script>
+    <script src="../JS/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row header">
+            <div class="col-lg-3 logo__img">
+                <a href="./formLOGO.html"><img src="../img/logo.png" alt="logo" id="logo"></a>
+            </div>
+            <div class="col-lg-5 nav__list">
+                <ul class="nav">
+                    <li class="nav-item"><a href="home.html" class="nav-link">Trang chủ</a></li>
+
+
+                    <li class="nav-item dropdown">
+                        <a href="./formALLProduct.html" class="nav-link">
+                            Sản phẩm<i style="margin-left: 10px;" class="fa fa-caret-down"></i>
+                        </a>
+                        <div class="dropdown-content" style="margin-top: 4px;">
+                            <div class="dropdown-sub">
+                                <div class="column">
+                                    <a class="Product" href="./Canon.html">Canon</a>                                    
+                                </div>
+                                <div class="column">
+                                    <a class="Product" href="./Nikon.html">Nikon</a>                                   
+                                </div>
+                                <div class="column">
+                                    <a class="Product" href="./Sony.html">Sony</a>                                 
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="nav-item"><a href="gioiThieu.html" class="nav-link">Về chúng tôi</a></li>
+                    <li class="nav-item"><a href="Contact.html" class="nav-link">Liên hệ</a></li>
+                </ul>
+            </div>
+            <div class="col-ld-4 justify-content-end">
+                <div style="display:flex; margin-bottom: 21.5px;">
+                    <div class="btnTimKiem">
+                        <form id="searchbox" method="get" action="/search" autocomplete="off">
+                            <input name="q" type="text" size="15" placeholder="search..." />
+                            <button type="submit" class="btn_submit_icon"><i class="fa fa-search"></i></button>
+                        </form>
+                    </div>
+                    <div class="user-icon">
+                        <span onclick="show()" class="btn_user"><i class="fa fa-user" aria-hidden="true"></i>Tài
+                            khoản</span>
+                        <ul class="user-options">
+                            <li><a href="formDNhap.html">Đăng nhập</a></li>
+                            <li><a href="formDKY.html">Đăng ký</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div id="formDangKy">
+            <div class="form-header">
+                <h3>Tạo một tài khoản</h3>
+                <p>Tạo một tài khoản là miễn phí và dễ dàng</p>
+            </div>
+            <form>
+                <table>
+                    <tr>
+                        <td>
+                            <label for="txtName">Họ và Tên: </label>
+                            <input type="text" name="name" id="txtName" class="form-control" placeholder="Nguyễn Văn A">
+                            <span id="tbName" class="text-danger">*</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="txtNgaySinh">Ngày sinh: </label>
+                            <input type="date" name="ngaysinh" id="txtNgaySinh" class="form-control">
+                            <span id="tbNgaySinh" class="text-danger">*</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="txtEmail">Email: </label>
+                            <input type="email" name="email" id="txtEmail" class="form-control" placeholder="abc123@gmail.com">
+                            <span id="tbEmail" class="text-danger">*</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="passw">Mật khẩu: </label>
+                            <input type="password" name="passw" id="passw" class="form-control">
+                            <span id="tbMK" class="text-danger">*</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="txtXNMatKhau">Xác nhận mật khẩu: </label>
+                            <input type="password" name="xnmatkhau" id="txtXNMatKhau" class="form-control">
+                            <span id="tbXNMatKhau" class="text-danger">*</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <i style="color:gray;">
+                                Mật khẩu phải là:<br>
+                                -8 to 20 ký tự<br>
+                                -một chữ cái viết thường<br>
+                                -một chữ cái viết hoa<br>
+                                -một con số<br>
+                                -một ký tự đặc biệt<br>
+                                (ví dụ: Sony_1234#)
+                            </i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="txtSDT">Số điện thoại: </label>
+                            <input type="tel" name="sdt" id="txtSDT" class="form-control"
+                                placeholder="09|03|07|08XXXXXXXX">
+                            <span id="tbSDT" class="text-danger">*</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox" name="dongydieukhoan" id="dongYDieuKhoan" value="Tôi 
+                            muốn nhận thông tin cập nhật mới nhất về sản phẩm, khuyến mãi và các ưu đãi.">Tôi
+                            muốn nhận thông tin cập nhật mới nhất về sản phẩm, khuyến mãi và các ưu đãi.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button type="button" id="btnDangKy" class="btn btn-warning btn-block" onclick="saveRegistration()">Đăng ký</button>
+                        </td>
+                    </tr>
+                </table>
+                <div style="text-align: center; margin:5px">
+                    <p>Đã có tài khoản? <a href="formDNhap.html">Đăng nhập</a></p>
+                </div>
+            </form>
+        </div>
+        <div class="row footer">
+            <div class="col-lg-3 footer_item">
+                <h6>Địa chỉ Showroom:</h6>
+                <p class="text__footer">
+                    590/11 Cách Mạng Tháng 8, P.11, <br>
+                    Q.3, HCM.<br>
+                    0868.003.990<br>                    
+                    0935.912.495<br>                    
+                    Làm việc tất cả các ngày trong tuần<br>
+                    Thứ 2 đến Thứ 7 : 9h đến 19h30<br>
+                    Chủ Nhật và Ngày Lễ : 9h đến 18h
+                </p>
+            </div>
+            <div class="col-lg-3 footer_item">
+                <h6>Thông tin</h6>
+                <p class="text__footer">                    
+                    <a href="#" class="link__footer">Sửa máy ảnh và ống kính</a><br>
+                    <a href="gioiThieu.html" class="link__footer">Giới thiệu</a><br>
+                    <a href="#" class="link__footer">Hướng dẫn đặt hàng</a><br>
+                    <a href="#" class="link__footer">Chính sách bảo mật thông tin</a><br>
+                    <a href="#" class="link__footer">Đổi trả - bảo hành hàng hóa</a><br>
+                </p>
+            </div>
+            <div class="col-lg-2 footer_item">
+                <h6>Dịch vụ</h6>
+                <p class="text__footer">
+                    <a href="gioiThieu.html" class="link__footer">Liên hệ</a>
+                </p>
+            </div>
+            <div class="col-lg-2 footer_item">
+                <h6>Chăm sóc khách hàng</h6>
+                <p class="text__footer">
+                    <a href="#" class="link__footer">Thương hiệu</a><br>
+                    <a href="Sitemap.html" class="link__footer">Sơ đồ trang</a>
+                </p>
+            </div>
+            <div class="col-lg-2 footer_item">
+                <h6>Quản lý tài khoản</h6>
+                <p class="text__footer">
+                    <a href="./thongtinTaiKhoan.html" class="link__footer">Quản lý Tài khoản</a><br>
+                    <a href="#" class="link__footer">Lịch sử đơn hàng</a>
+                </p>
+            </div>
+            
+        </div>
+    </div>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="../JS/formDky.js"></script>
+    <script>
+        
+        function saveRegistration() {
+            var email = document.getElementById('txtEmail').value;
+            var password = document.getElementById('passw').value;
+
+            // Save to Local Storage
+            localStorage.setItem('userEmail', email);
+            localStorage.setItem('userPassword', password);
+
+            alert('Đăng ký thành công. Bây giờ bạn có thể đăng nhập.');
+        }
+
+        function attemptLogin() {
+            var email = document.getElementById('loginEmail').value;
+            var password = document.getElementById('loginPassword').value;
+
+            // Retrieve from Local Storage
+            var savedEmail = localStorage.getItem('userEmail');
+            var savedPassword = localStorage.getItem('userPassword');
+
+            // Check if the entered credentials match the saved credentials
+            if (email === savedEmail && password === savedPassword) {
+                alert('Đăng nhập thành công! Quay trở lại trang chủ.');
+                // Redirect to home page or perform other actions
+                window.location.href = 'home.html';
+            } else {
+                alert('Đăng nhập thất bại. Vui lòng kiểm tra email và mật khẩu của bạn.');
+            }
+        }
+    </script>
+</body>
+
+<!-- Co dinh tai khoan -->
+<script>
+    $('.btn_user').click(function(event){
+    event.stopPropagation();
+    });
+    function show() {
+        document.querySelector('.user-options').style.display= 'block';
+    }
+
+    function close() {
+        document.querySelector('.user-options').style.display= 'none';
+    }
+
+    $(window).click(function() {
+        close()
+    });
+</script>
+
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Về chúng tôi</title>
+
+    <link rel="stylesheet" href="../Bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../CSS/gioiThieu.css">
+    <link rel="stylesheet" href="../CSS/hfshare.css">
+    <script src="../JS/jquery-3.3.1.min.js"></script>
+    <script src="../JS/bootstrap.min.js"></script>
+
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row header">
+            <div class="col-lg-3 logo__img">
+                <a href="./formLOGO.html"><img src="../img/logo.png" alt="logo" id="logo"></a>
+            </div>
+            <div class="col-lg-5 nav__list">
+                <ul class="nav">
+                    <li class="nav-item"><a href="home.html" class="nav-link">Trang chủ</a></li>
+
+
+                    <li class="nav-item dropdown">
+                        <a href="./formALLProduct.html" class="nav-link">
+                            Sản phẩm<i style="margin-left: 10px;" class="fa fa-caret-down"></i>
+                        </a>
+                        <div class="dropdown-content" style="margin-top: 4px;">
+                            <div class="dropdown-sub">
+                                <div class="column">
+                                    <a class="Product" href="./Canon.html">Canon</a>                                    
+                                </div>
+                                <div class="column">
+                                    <a class="Product" href="./Nikon.html">Nikon</a>                                    
+                                </div>
+                                <div class="column">
+                                    <a class="Product" href="./Sony.html">Sony</a>                                    
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="nav-item"><a href="gioiThieu.html" class="nav-link">Về chúng tôi</a></li>
+                    <li class="nav-item"><a href="Contact.html" class="nav-link">Liên hệ</a></li>
+                </ul>
+            </div>
+            <div class="col-ld-4 justify-content-end">
+                <div style="display:flex; margin-bottom: 21.5px;">
+                    <div class="btnTimKiem">
+                        <form id="searchbox" method="get" action="/search" autocomplete="off">
+                            <input name="q" type="text" size="15" placeholder="search..." />
+                            <button type="submit" class="btn_submit_icon"><i class="fa fa-search"></i></button>
+                        </form>
+                    </div>
+                    <div class="user-icon">
+                        <span onclick="show()" class="btn_user"><i class="fa fa-user" aria-hidden="true"></i>Tài
+                            khoản</span>
+                        <ul class="user-options">
+                            <li><a href="formDNhap.html">Đăng nhập</a></li>
+                            <li><a href="formDKY.html">Đăng ký</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="section">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h1 style="font-size:55px;">Chào mừng đến với <em>Your Studio - Nơi Mỗi Khoảnh Khắc Trở Nên Đặc Biệt!</em></h1>
+                    <p>Tại <em>Your Studio</em>, chúng tôi không chỉ là một cửa hàng bán lẻ máy ảnh kỹ thuật số mà còn là nơi 
+                        nơi bạn có thể bắt đầu hành trình sáng tạo của mình. Chúng tôi tin rằng từng khoảnh khắc đều 
+                        quan trọng và đáng nhớ, và máy ảnh là công cụ giúp bạn ghi lại những khoảnh khắc đó một cách 
+                        tuyệt vời nhất.
+                    </p>
+                    <p>Chúng tôi tự hào cung cấp cho bạn không chỉ những sản phẩm máy ảnh kỹ thuật số chất lượng hàng 
+                        đầu mà còn là trải nghiệm mua sắm độc đáo. Từ những chiếc máy ảnh nhỏ gọn đến những mô hình chuyên 
+                        nghiệp, <em>Your Studio</em> mang đến sự đa dạng để đáp ứng mọi nhu cầu và đam mê nhiếp ảnh của bạn.
+                    </p>
+                    <p>Chúng tôi cam kết đồng hành cùng bạn trong hành trình sáng tạo, không chỉ qua việc cung cấp sản 
+                        phẩm chất lượng mà còn qua dịch vụ chăm sóc khách hàng tận tâm. Hãy đặt niềm tin của bạn vào 
+                        <em>Your Studio</em>, nơi mà mọi chi tiết đều được chú trọng để bạn có thể chụp và lưu giữ những khoảnh khắc 
+                        đẹp nhất của cuộc sống.
+                    </p>  
+                    <p>Hãy tham gia cùng chúng tôi và biến mỗi bức ảnh thành một tác phẩm nghệ thuật, mỗi khoảnh khắc 
+                        thành một kỷ niệm không thể nào quên. <em>Your Studio - Nơi Mọi Khoảnh Khắc Trở Nên Đặc Biệt!</em>
+                    </p>
+                    <h5 style="color:#333;font-style: italic; margin-top: 30px;"><i>Mọi chi tiết liên hệ <em>Your Studio</em></i></h6>
+                    <p style="color:gray; font-style: italic; font-size: 16px;">
+                        + Địa chỉ: 590/11 Cách Mạng Tháng 8, P.11, Q.3, HCM.<br>
+                        + Email: yourstudio@gmail.com<br>
+                        + Hotline: 0868.003.990 / 0935.912.495<br>   
+                    </p>                
+                </div>
+                <div class="col-lg-6">
+                    <img src="../img/gioithieu3(2).png" alt="img-gioi-thieu" style="width: 100%;">                    
+                </div>
+            </div>                           
+            
+        </div>
+        <div class="row footer">
+            <div class="col-lg-3 footer_item">
+                <h6>Địa chỉ Showroom:</h6>
+                <p class="text__footer">
+                    590/11 Cách Mạng Tháng 8, P.11, <br>
+                    Q.3, HCM.<br>
+                    0868.003.990<br>                    
+                    0935.912.495<br>                    
+                    Làm việc tất cả các ngày trong tuần<br>
+                    Thứ 2 đến Thứ 7 : 9h đến 19h30<br>
+                    Chủ Nhật và Ngày Lễ : 9h đến 18h
+                </p>
+            </div>
+            <div class="col-lg-3 footer_item">
+                <h6>Thông tin</h6>
+                <p class="text__footer">                    
+                    <a href="#" class="link__footer">Sửa máy ảnh và ống kính</a><br>
+                    <a href="#" class="link__footer">Giới thiệu</a><br>
+                    <a href="#" class="link__footer">Hướng dẫn đặt hàng</a><br>
+                    <a href="#" class="link__footer">Chính sách bảo mật thông tin</a><br>
+                    <a href="#" class="link__footer">Đổi trả - bảo hành hàng hóa</a><br>
+                </p>
+            </div>
+            <div class="col-lg-2 footer_item">
+                <h6>Dịch vụ</h6>
+                <p class="text__footer">
+                    <a href="#" class="link__footer">Liên hệ</a>
+                </p>
+            </div>
+            <div class="col-lg-2 footer_item">
+                <h6>Chăm sóc khách hàng</h6>
+                <p class="text__footer">
+                    <a href="#" class="link__footer">Thương hiệu</a><br>
+                    <a href="Sitemap.html" class="link__footer">Sơ đồ trang</a>
+                </p>
+            </div>
+            <div class="col-lg-2 footer_item">
+                <h6>Quản lý tài khoản</h6>
+                <p class="text__footer">
+                    <a href="./thongtinTaiKhoan.html" class="link__footer">Quản lý Tài khoản</a><br>
+                    <a href="#" class="link__footer">Lịch sử đơn hàng</a>
+                </p>
+            </div>            
+        </div>
+    </div>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</body>
+<!-- Co dinh tai khoan -->
+<script>
+    $('.btn_user').click(function(event){
+    event.stopPropagation();
+    });
+    function show() {
+        document.querySelector('.user-options').style.display= 'block';
+    }
+
+    function close() {
+        document.querySelector('.user-options').style.display= 'none';
+    }
+
+    $(window).click(function() {
+        close()
+    });
+</script>
+</html>

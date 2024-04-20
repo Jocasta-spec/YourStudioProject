@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chi tiết sản phẩm</title>
+
+    <link rel="stylesheet" href="../Bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../CSS/hfshare.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../CSS/ChitietSP.css">
+    <script src="../JS/jquery-3.3.1.min.js"></script>
+    <script src="../JS/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body class="">
+    <div class="container-fluid" id="home">
+        <div class="row header">
+            <div class="col-lg-3 logo__img">
+              <a href="./formLOGO.html"><img src="../img/logo.png" alt="logo" id="logo"></a>
+            </div>
+            <div class="col-lg-5 nav__list">
+              <ul class="nav">
+                <li class="nav-item"><a href="home.html" class="nav-link">Trang chủ</a></li>
+                <li class="nav-item dropdown">
+                  <a href="./formALLProduct.html" class="nav-link">
+                    Sản phẩm<i style="margin-left: 10px;" class="fa fa-caret-down"></i>
+                  </a>
+                  <div class="dropdown-content" style="margin-top: 4px;">
+                    <div class="dropdown-sub">
+                      <div class="column">
+                        <a class="Product" href="./Canon.html">Canon</a>
+                      </div>
+                      <div class="column">
+                        <a class="Product" href="./Nikon.html">Nikon</a>
+                      </div>
+                      <div class="column">
+                        <a class="Product" href="./Sony.html">Sony</a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="nav-item"><a href="gioiThieu.html" class="nav-link">Về chúng tôi</a></li>
+                <li class="nav-item"><a href="Contact.html" class="nav-link">Liên hệ</a></li>
+              </ul>
+            </div>
+            <div class="col-ld-4 justify-content-end">
+              <div style="display:flex; margin-bottom: 21.5px; align-items: center;">
+                <div class="btnTimKiem">
+                  <form id="searchbox" method="get" action="/search" autocomplete="off">
+                    <input name="q" type="text" size="15" placeholder="search..." />
+                    <button type="submit" class="btn_submit_icon"><i class="fa fa-search"></i></button>
+                  </form>
+                </div>
+                <div class="user-icon">
+                  <span onclick="show()" class="btn_user"><i class="fa fa-user" aria-hidden="true"></i>Tài
+                    khoản</span>
+                  <ul class="user-options">
+                    <li><a href="formDNhap.html">Đăng nhập</a></li>
+                    <li><a href="formDKY.html">Đăng ký</a></li>
+                  </ul>
+                </div>
+                <div class="icon-cart">
+                  <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 20">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M6 15a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm0 0h8m-8 0-1-4m9 4a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-9-4h10l2-7H3m2 7L3 4m0 0-.792-3H1" />
+                  </svg>
+                  <span>0</span>
+                </div>
+                <div class="cartTab cart-container">
+                  <h1>Giỏ hàng của tôi</h1>
+                  <div class="listCart" id="cart-items"> 
+                  </div>
+                  <div class="cart-total"> 
+                    <p>Tổng tiền: <span id="total">0</span></p>
+                  </div>
+                  <div class="btn" style="gap: 10px;">
+                    <button class="close">ĐÓNG</button>
+                    <button class="checkOut">Check Out</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        <div class="section">
+            <div class="row chi_tietSP item">
+                <div class="col-7" id="img__products">
+                    <div id="img__products_body">
+                        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                            <!-- Indicators -->
+                            <ol class="carousel-indicators">
+                                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                                <li data-target="#myCarousel" data-slide-to="1"></li>
+                                <li data-target="#myCarousel" data-slide-to="2"></li>
+                                <li data-target="#myCarousel" data-slide-to="3"></li>
+                            </ol>
+                            <!-- Wrapper for slides -->
+                            <div class="carousel-inner">
+                                <div class="item active">
+                                    <img src="../img-p-d/Sony/Sony - 1/sony.jpg" alt="Ảnh nhìn chéo"
+                                        style="width:400px;height:400px;object-fit: cover;">
+                                </div>
+
+                                <div class="item">
+                                    <img src="../img-p-d/Sony/Sony - 1/sony1.jpg" alt="Ảnh phụ kiện đi kèm"
+                                        style="width:400px;height:400px;object-fit: cover;">
+                                </div>
+
+                                <div class="item">
+                                    <img src="../img-p-d/Sony/Sony - 1/sony2.jpg" alt="Ảnh chụp từ trên xuống"
+                                        style="width:400px;height:400px;object-fit: cover;">
+                                </div>
+
+                                <div class="item">
+                                    <img src="../img-p-d/Sony/Sony - 1/sony3.jpg" alt="Ảnh chính diện"
+                                        style="width:400px;height:400px;object-fit: cover;">
+                                </div>
+                            </div>
+                            <!-- Left and right controls -->
+                            <a style="background-image: none; color:#000" class="left carousel-control"
+                                href="#myCarousel" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left" style="left:-100px;"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a style="background-image: none; color:#000" class="right carousel-control"
+                                href="#myCarousel" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right" style="right:-100px;"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div id="img_product_detail">
+                        <a href="#" class="img_product_detail_1"><img src="../img-p-d/Sony/Sony - 1/sony.jpg" alt=""
+                                width="80%"></a>
+                        <a href="#" class="img_product_detail_1"><img src="../img-p-d/Sony/Sony - 1/sony1.jpg" alt=""
+                                width="80%"></a>
+                        <a href="#" class="img_product_detail_1"><img src="../img-p-d/Sony/Sony - 1/sony2.jpg" alt=""
+                                width="80%"></a>
+                        <a href="#" class="img_product_detail_1"><img src="../img-p-d/Sony/Sony - 1/sony3.jpg" alt=""
+                                width="80%"></a>
+                    </div>
+                </div>
+                <div class="col-5">
+                    <div id="product_detail">
+                        <h2 class="ProductName" style="font-size: 40px;">Máy ảnh kỹ thuật số ZV-1 (BDOMS)</h2>
+                        <p>Model: ZV-1/WQ E32</p>
+                        <p class="Price" style="font-size: 35px; color:#dc3545;"><b>15,490,000₫</b></p>
+                        <p>MÀU SẮC</p>
+                        <div style="width:30px; height:30px;background-color:#fff;border:1px solid #000;"></div>
+                        <div class="quantity-selector">
+                            <a class=" icon-minus">
+                                <img src="../img-p-d/Canon/Canon - 1/minus-21-16.png" alt="">
+                            </a>
+                            <span class="quantity-selector__current-quantity">1</span>
+                            <a class=" icon-plus">
+                                <img src="../img-p-d/Canon/Canon - 1/plus-35-16.png" alt="">
+                            </a>
+                        </div>
+                        <button class="btn btn-danger btn_ThemVaoGH">
+                            <span>
+                                <img src="../img-p-d/Canon/Canon - 1/cart-plus-3-32.png" alt=""
+                                    style="margin-right: 5px;">
+                            </span>Thêm vào giỏ hàng
+                        </button>
+                        <button class="btn btn-danger btn_MuaNgay">Mua ngay</button>
+                    </div>
+                </div>
+            </div>
+            <div id="tab_product_details">
+                <ul class="nav nav-tabs justify-content-center" role="tablist" id="myTab">
+                    <li class="active"><a href="#previousIssue" role="tab" data-toggle="tab">Tổng quan</a></li>
+                    <li><a href="#currentIssue" role="tab" data-toggle="tab">Thông số kỹ thuật</a></li>
+                    <li><a href="#nextIssue" role="tab" data-toggle="tab">Hỗ trợ</a></li>
+                </ul>
+                <!-- Tab panes -->
+                <div class="tab-content">
+                    <div class="tab-pane active" id="previousIssue">
+                        <p>Máy ảnh ZV-1 được thiết kế dành riêng cho các bạn thích quay lại những khoảnh
+                            khắc hàng ngày với màn hình LCD cảm ứng lật ngang, báng cầm tiện dụng và đèn
+                            báo hiệu ghi hình. Micro định hướng (3 đầu thu), với màn chống ồn khi gió thổi
+                            giúp tiếng thu sẽ trong trẻo hơn. Với 2 tính năng nổi trội là xoá phông với 1 nút
+                            bấm và chức năng giới thiệu sản phẩm sẽ làm video của bạn đơn giản và thú vị
+                            hơn bao giờ hết.
+                            <br><br>Quay Vlog giờ đây đã trở nên cực kỳ dễ dàng với Sony ZV-1 chiếc máy ảnh compact nhỏ
+                            gọn được sinh ra để dành riêng cho các Vlogger sáng tạo nội dung video hay những người hay
+                            livestream để bán hàng, sản xuất video chơi game... Tốc độ lấy nét nhanh, Eye AF liên tục và
+                            một thiết kế nhỏ gọn để bạn có thể mang tới bất cứ nơi đâu trong chuyến đi của mình.
+                        </p>
+                        <div style="text-align: center; margin-top: 40px;">
+                            <img src="../img-p-d/Sony/Sony - 1/sony-minh-hoa.jpg" alt=""
+                                style="width:100%;height:100%;object-fit: cover;">
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="currentIssue">
+                        <p> &bull; Cảm biến CMOS BSI Exmor RS 1" 20.1MP<br>
+                            &bull; Ống kính ZEISS 24-70mm f/1.8-2.8<br>
+                            &bull; Chụp liên tiếp: 24 khung hình/giây<br>
+                            &bull; Quay video 4K30p UHD với gamma HLG & S-Log3<br>
+                            &bull; Màn hình cảm ứng LCD 3.0" lật sang bên<br>
+                            &bull; Pin: NP-BX1 lithium-ion<br>
+                            &bull; Thời lượng pin (chụp ảnh): 260 ảnh<br>
+                            &bull; Kích thước: 105 x 60 x 44 mm<br>
+                            &bull; Trọng lượng (bao gồm pin): 294 g<br>
+                            &bull; Kết nối Wifi, Bluetooth<br>
+                    </div>
+                    <div class="tab-pane" id="nextIssue">
+                        <a href="lienHe.html"><img src="../img-p-d/Canon/Canon - 1/contact-45-32.png" alt=""> Liên
+                            hệ</a>
+                    </div>
+                </div>
+            </div>
+            <div style="margin-left: 50px;">
+                <div style="margin: 100px 0 40px 0;">
+                  <h2 class="head-of-offer">CÓ THỂ BẠN SẼ THÍCH</h2>
+                </div>
+                <div class=" list_product">
+                  <div class="logo__product">
+                    <a href="ChitietCanon2.html"><img src="../img-p-d/Canon/Canon - 1/trending-canon-r-3.jpg" alt="" width="50%"></a>
+                    <a href="ChitietCanon2.html">
+                      <h6 class="ProductName">Canon EOS R (Body Only), Mới 100%</h6>
+                      <p class="Price">38.990.000₫</p>
+                    </a>
+                    <a href="ChitietCanon2.html"><button class="details">Xem chi tiết</button></a>
+                  </div>
+                  <div class="logo__product">
+                    <a href="ChitietCanon1.html"><img src="../img-p-d/Canon/Canon - 1/trending-canon-r50-5.jpg" alt="" width="50%"></a>
+                    <a href="ChitietCanon1.html">
+                      <h6 class="ProductName">Canon EOS R100 + RF 18-45mm, Mới 100%</h6>
+                      <p class="Price">15.990.000₫</p>
+                    </a>
+                    <a href="ChitietCanon1.html"><button class="details">Xem chi tiết</button></a>
+                  </div>
+                  <div class="logo__product">
+                    <a href="ChitietSony1.html"><img src="../img-p-d/Canon/Canon - 1/trending-sony.png" alt="" width="50%"></a>
+                    <a href="ChitietSony1.html">
+                      <h6 class="ProductName">Máy ảnh kỹ thuật số ZV-1 (BDOMS)</h6>
+                      <p class="Price">15.490.000₫</p>
+                    </a>
+                    <a href="ChitietSony1.html"><button class="details">Xem chi tiết</button></a>
+                  </div>
+                  <div class="logo__product">
+                    <a href="ChitietNikon1.html"><img src="../img-p-d/Canon/Canon - 1/trending-nikon.jpg" alt="" width="50%"></a>
+                    <a href="ChitietNikon1.html">
+                      <h6 class="ProductName">Nikon Coolpix B500 - Chính hãng</h6>
+                      <p class="Price">5.690.000₫</p>
+                    </a>
+                    <a href="ChitietNikon1.html"><button class="details">Xem chi tiết</button></a>
+                  </div>
+                </div>
+              </div>
+        </div>
+        <div class="row footer">
+            <div class="col-lg-3 footer_item">
+                <h6>Địa chỉ Showroom:</h6>
+                <p class="text__footer">
+                    590/11 Cách Mạng Tháng 8, P.11, <br>
+                    Q.3, HCM.<br>
+                    0868.003.990<br>
+                    0935.912.495<br>
+                    Làm việc tất cả các ngày trong tuần<br>
+                    Thứ 2 đến Thứ 7 : 9h đến 19h30<br>
+                    Chủ Nhật và Ngày Lễ : 9h đến 18h
+                </p>
+            </div>
+            <div class="col-lg-3 footer_item">
+                <h6>Thông tin</h6>
+                <p class="text__footer">
+                    <a href="#" class="link__footer">Sửa máy ảnh và ống kính</a><br>
+                    <a href="gioiThieu.html" class="link__footer">Giới thiệu</a><br>
+                    <a href="#" class="link__footer">Hướng dẫn đặt hàng</a><br>
+                    <a href="#" class="link__footer">Chính sách bảo mật thông tin</a><br>
+                    <a href="#" class="link__footer">Đổi trả - bảo hành hàng hóa</a><br>
+                </p>
+            </div>
+            <div class="col-lg-2 footer_item">
+                <h6>Dịch vụ</h6>
+                <p class="text__footer">
+                    <a href="gioiThieu.html" class="link__footer">Liên hệ</a>
+                </p>
+            </div>
+            <div class="col-lg-2 footer_item">
+                <h6>Chăm sóc khách hàng</h6>
+                <p class="text__footer">
+                    <a href="#" class="link__footer">Thương hiệu</a><br>
+                    <a href="Sitemap.html" class="link__footer">Sơ đồ trang</a>
+                </p>
+            </div>
+            <div class="col-lg-2 footer_item">
+                <h6>Quản lý tài khoản</h6>
+                <p class="text__footer">
+                    <a href="./thongtinTaiKhoan.html" class="link__footer">Quản lý Tài khoản</a><br>
+                    <a href="#" class="link__footer">Lịch sử đơn hàng</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <script src="../JS/ChitietSP.js"></script>
+</body>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<script>
+    $('.btn_user').click(function (event) {
+        event.stopPropagation();
+    });
+    function show() {
+        document.querySelector('.user-options').style.display = 'block';
+    }
+
+    function close() {
+        document.querySelector('.user-options').style.display = 'none';
+    }
+
+    $(window).click(function () {
+        close()
+    });
+</script>
+
+</html>

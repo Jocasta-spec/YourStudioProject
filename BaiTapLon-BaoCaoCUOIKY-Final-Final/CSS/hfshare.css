@@ -1,0 +1,235 @@
+*{
+    padding:0;
+    margin:0;
+}
+
+.container-fluid {
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+
+.header {
+    background-color: #000;
+}
+
+.row.header {
+    align-items: center;
+}
+
+.col-lg-3,
+.col-lg-5,
+.col-ld-4 {
+    padding: 0;
+}
+
+.logo__img {
+    text-align: center;
+    align-items: center;
+}
+
+#logo {
+    width: 50%;
+}
+
+.nav__list {
+    line-height: 60px;
+}
+
+.nav {
+    margin-right: 30px;
+}
+
+.nav-link {
+    color: white;
+    font-weight: 600;
+}
+
+/*Nut tim kiem */
+
+.btnTimKiem {
+    padding-top: 25px;
+    margin-right: 30px;
+}
+
+#searchbox {
+    background: url(http://4.bp.blogspot.com/-u0fEq-zSTYI/VD1gGDLy3aI/AAAAAAAAAhw/im3bcQd5wBM/s1600/search-box.png) no-repeat;
+    height: 27px;
+    width: 202px;
+}
+
+input:focus::-webkit-input-placeholder {
+    color: transparent;
+}
+
+input:focus:-moz-placeholder {
+    color: transparent;
+}
+
+input:focus::-moz-placeholder {
+    color: transparent;
+}
+
+#searchbox input {
+    outline: none;
+}
+
+#searchbox input[type="text"] {
+    background: transparent;
+    margin: 0px 0px 0px 12px;
+    padding: 5px 0px 5px 0px;
+    border-width: 0px;
+    font-family: "Arial Narrow", Arial, sans-serif;
+    font-size: 12px;
+    font-style: italic;
+    width: 77%;
+    color: #828282;
+    display: inline-table;
+    vertical-align: top;
+}
+
+/*Icon */
+
+.btn_submit_icon {
+    border: none;
+    background-color: #e8e8e8;
+    margin-top: 1px;
+    padding: 0;
+}
+
+.btn_user {
+    color: #fff
+}
+
+.btn_user:hover {
+    color: #8E0503;
+}
+
+.user-icon {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.user-icon i {
+    position: relative;
+    width: 10px;
+    height: 50px;
+    padding-top: 30px;
+    margin-right: 10px;
+    color: white;
+}
+
+/*Cố định tài khoản */
+
+.user-options {
+    margin-top: 150px;
+    display: none;
+    position: absolute;
+    /* top: 50px; */
+    background-color: #828282;
+    list-style: none;
+    padding: 10px;
+    text-align: right;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    z-index: 1;
+}
+
+.user-options li {
+    margin-bottom: 10px;
+}
+
+.user-options a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.user-options a:hover {
+    color: #8E0503;
+}
+/* Thiet lap hover cho các menu */
+.nav>.nav-item>.nav-link {
+    position: relative;
+}
+
+.nav>.nav-item>.nav-link::before {
+    content: "";
+    height: 5px;
+    width: 0px;
+    background: #8E0503;
+    position: absolute;
+    bottom: -4px;
+    left: 0px;
+    transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.nav-item:hover>.nav-link::before {
+    width: 100%;
+    display: block;
+}
+
+.nav-link:hover {
+    color: #8E0503;
+}
+
+
+/* Footer */
+.footer{
+    background-color: #000;
+    margin-top: 20px;
+    padding:30px 0px 20px 40px;
+}
+.footer_item{
+    color:#fff;
+}
+.text__footer{
+    font-size: 13px;
+}
+.link__footer{
+    color:#fff;
+}
+
+.footer .link__footer {
+    text-decoration: none;
+}
+
+.footer .link__footer:hover {
+
+    color: #8E0503;
+}
+
+
+/* Menu dropdown */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 100%;
+    left: 0;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {   
+    /* padding: 10px; */
+    background-color: black;
+    /* height: 250px; */
+}
+
+.column a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+
+.column a:hover {
+    color: #8E0503;
+}

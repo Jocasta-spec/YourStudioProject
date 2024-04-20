@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<link rel="stylesheet" href="../Bootstrap/bootstrap.min.css">
+<link rel="stylesheet" href="../CSS/hfshare.css">
+<link rel="stylesheet" href="../CSS/Contact.css">
+<script src="../JS/jquery-3.3.1.min.js"></script>
+<script src="../JS/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+
+<body>
+    <div class="container-fluid">
+        <div class="row header">
+            <div class="col-lg-3 logo__img">
+                <a href="./formLOGO.html"><img src="../img/logo.png" alt="logo" id="logo"></a>
+            </div>
+            <div class="col-lg-5 nav__list">
+                <ul class="nav">
+                    <li class="nav-item"><a href="home.html" class="nav-link">Trang chủ</a></li>
+                    <li class="nav-item dropdown">
+                        <a href="./formALLProduct.html" class="nav-link">
+                            Sản phẩm<i style="margin-left: 10px;" class="fa fa-caret-down"></i>
+                        </a>
+                        <div class="dropdown-content" style="margin-top: 4px;">
+                            <div class="dropdown-sub">
+                                <div class="column">
+                                    <a class="Product" href="./Canon.html">Canon</a>
+                                </div>
+                                <div class="column">
+                                    <a class="Product" href="./Nikon.html">Nikon</a>
+                                </div>
+                                <div class="column">
+                                    <a class="Product" href="./Sony.html">Sony</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a href="gioiThieu.html" class="nav-link">Về chúng tôi</a></li>
+                    <li class="nav-item"><a href="Contact.html" class="nav-link">Liên hệ</a></li>
+                </ul>
+            </div>
+            <div class="col-ld-4 justify-content-end">
+                <div style="display:flex; margin-bottom: 21.5px;">
+                    <div class="btnTimKiem">
+                        <form id="searchbox" method="get" action="/search" autocomplete="off">
+                            <input name="q" type="text" size="15" placeholder="search..." />
+                            <button type="submit" class="btn_submit_icon"><i class="fa fa-search"></i></button>
+                        </form>
+                    </div>
+                    <div class="user-icon">
+                        <span onclick="show()" class="btn_user"><i class="fa fa-user" aria-hidden="true"></i>Tài
+                            khoản</span>
+                        <ul class="user-options">
+                            <li><a href="formDNhap.html">Đăng nhập</a></li>
+                            <li><a href="formDKY.html">Đăng ký</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="section">
+            <div class="Contact">
+                <h1 style="text-align: center; color: palevioletred; font-weight: bold; margin-top: 20px;">Lời cảm ơn
+                </h1>
+                <h5 style="text-align: center; text-align: justify; margin: 0px 150px; word-spacing: 10px;">
+                    <p>Lời cảm ơn đến cô Nguyễn Thị Hồng Lương</p>
+
+                    <p><br>Nhóm chúng em xin gửi lời cảm ơn chân thành đến cô Nguyễn Thị Hồng Lương vì đã đồng hành và
+                        hỗ
+                        trợ chúng em trong suốt quá trình học tập.</p>
+
+                    <p><br>Cô không chỉ là người hướng dẫn mà còn là nguồn động viên vô cùng quan trọng. Những ý
+                        kiến phản hồi, góp ý chân thành và sự kiên nhẫn của quý cô đã giúp nhóm chúng em hiểu rõ hơn về
+                        bài
+                        tập website
+                        và phát triển kỹ năng code của mình.</p>
+
+                    <p><br>Nhóm chúng em cảm thấy biết ơnvì kiến thức chuyên môn mà quý cô đã chia sẻ và biết ơn sự tận
+                        tâm
+                        và
+                        lòng nhiệt huyết trong công việc giảng dạy. Cô không chỉ là người hướng dẫn mà còn là nguồn
+                        động viên, đưa ra những thách thức giúp nhóm chúng em phát triển.</p>
+
+                    <p><br>Nhóm chúng em rất may mắn và tự hào khi được học hỏi dưới sự hướng dẫn của cô. Sự tận tâm và
+                        sự hiểu biết sâu sắc của quý cô là nguồn động viên lớn, giúp nhóm chúng em đạt được những kỹ
+                        năng
+                        nhất định trong bài tập lớn này.</p>
+
+                    <p><br>Một lần nữa, nhóm chúng em xin bày tỏ lòng biết ơn chân thành đến cô Nguyễn Thị Hồng Lương và
+                        hy
+                        vọng rằng những nỗ lực của tôi sẽ làm hài lòng cô.</p>
+
+                    <p><br>Xin chân thành cảm ơn!</p>
+
+                    <p><br>Trân trọng,</p>
+                    <p>Nguyễn Thị Cẩm Tú, Nguyễn Đăng Hoàng Anh</p>
+                </h5>
+                <h1 style="text-align: center; margin-bottom: -180px; margin-top: 100px; font-weight: bold;">Thành viên thực hiện</h1>
+                <div style="margin-top: 100px;" class="Cam_Tu">
+                    <div data-aos="fade-right" class="Info">
+                        <h1 style="color: #0169D9;">Nguyễn Thị Cẩm Tú</h1>
+                        <div class="Icon">
+                            <p style="font-size: 25px; font-weight: bold;">Thông Tin Liên Hệ</p>
+                            <i class="fa-brands fa-facebook fa-2xl"></i>
+                            <a target="_blank"
+                                href="https://www.facebook.com/LimitedEdition7903">https://www.facebook.com/LimitedEdition7903</a>
+                            <br><i class="fa-brands fa-instagram fa-2xl"></i><a target="_blank"
+                                href="https://www.instagram.com/justu.cma/">justu.cma</a>
+                            <br><i class="fa-solid fa-phone fa-2xl"></i><a href="#!">0967030509</a>
+                            <br><i class="fa-solid fa-envelope fa-beat fa-2xl"></i><a
+                                href="#!">camtu7092003@gmail.com</a>
+                        </div>
+
+                    </div>
+                    <div data-aos="flip-right" class="IMG-Team">
+                        <img src="../img/Tú-rmbg.png" alt="">
+                    </div>
+                </div>
+                <div class="Hoang_Anh">
+                    <div data-aos="flip-left" class="IMG-Team">
+                        <img src="../img/HA-rmbg.png" alt="">
+                    </div>
+                    <div data-aos="fade-left" class="Info">
+                        <h1 style="color: #0169D9;">Nguyễn Đăng Hoàng Anh</h1>
+                        <div class="Icon">
+                            <p style="font-size: 25px; font-weight: bold;">Thông Tin Liên Hệ</p>
+                            <i class="fa-brands fa-facebook fa-2xl"></i>
+                            <a target="_blank"
+                                href="https://www.facebook.com/hoanganh5959">https://www.facebook.com/hoanganh5959</a>
+                            <br><i class="fa-brands fa-instagram fa-2xl"></i><a target="_blank"
+                                href="https://www.instagram.com/ndha.59/">ndha.59</a>
+                            <br><i class="fa-solid fa-phone fa-2xl"></i><a href="#!">0967030509</a>
+                            <br><i class="fa-solid fa-envelope fa-beat fa-2xl"></i><a
+                                href="#!">hoanagnh5923@gmail.com</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row footer">
+            <div class="col-lg-3 footer_item">
+                <h6>Địa chỉ Showroom:</h6>
+                <p class="text__footer">
+                    590/11 Cách Mạng Tháng 8, P.11, <br>
+                    Q.3, HCM.<br>
+                    0868.003.990<br>
+                    0935.912.495<br>
+                    Làm việc tất cả các ngày trong tuần<br>
+                    Thứ 2 đến Thứ 7 : 9h đến 19h30<br>
+                    Chủ Nhật và Ngày Lễ : 9h đến 18h
+                </p>
+            </div>
+            <div class="col-lg-3 footer_item">
+                <h6>Thông tin</h6>
+                <p class="text__footer">
+                    <a href="#" class="link__footer">Sửa máy ảnh và ống kính</a><br>
+                    <a href="gioiThieu.html" class="link__footer">Giới thiệu</a><br>
+                    <a href="#" class="link__footer">Hướng dẫn đặt hàng</a><br>
+                    <a href="#" class="link__footer">Chính sách bảo mật thông tin</a><br>
+                    <a href="#" class="link__footer">Đổi trả - bảo hành hàng hóa</a><br>
+                </p>
+            </div>
+            <div class="col-lg-2 footer_item">
+                <h6>Dịch vụ</h6>
+                <p class="text__footer">
+                    <a href="gioiThieu.html" class="link__footer">Liên hệ</a>
+                </p>
+            </div>
+            <div class="col-lg-2 footer_item">
+                <h6>Chăm sóc khách hàng</h6>
+                <p class="text__footer">
+                    <a href="#" class="link__footer">Thương hiệu</a><br>
+                    <a href="./Sitemap.html" class="link__footer">Sơ đồ trang</a>
+                </p>
+            </div>
+            <div class="col-lg-2 footer_item">
+                <h6>Quản lý tài khoản</h6>
+                <p class="text__footer">
+                    <a href="./thongtinTaiKhoan.html" class="link__footer">Quản lý Tài khoản</a><br>
+                    <a href="#" class="link__footer">Lịch sử đơn hàng</a>
+                </p>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+
+<!-- /* Animation */ -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<script src="https://kit.fontawesome.com/9af9ce34ea.js" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+
+<!-- Co dinh tai khoan -->
+<script>
+    $('.btn_user').click(function (event) {
+        event.stopPropagation();
+    });
+    function show() {
+        document.querySelector('.user-options').style.display = 'block';
+    }
+
+    function close() {
+        document.querySelector('.user-options').style.display = 'none';
+    }
+
+    $(window).click(function () {
+        close()
+    });
+</script>
+
+</html>

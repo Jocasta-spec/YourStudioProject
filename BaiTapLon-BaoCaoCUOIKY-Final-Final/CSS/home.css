@@ -1,0 +1,41 @@
+*{
+    padding:0;
+    margin:0;
+}
+
+
+/* Chinh photo khớp màn */
+#home .main-photo img {
+    width: 100%;
+}
+/* Product */
+.products, .selling__products{
+    margin: 40px 25px 0 25px;
+}
+
+.logo__product a {
+    text-decoration: none;
+}
+
+.logo__product{
+    text-align: center;
+} 
+
+
+.link_product{
+    display:inline-block;
+    width:50%;
+    margin-top: 10px;
+}
+.See__details{
+    padding: 10px;
+    background-color: rgb(142, 4, 4);
+    border-radius: 99px;
+    font-size: 16px;
+    color:#fff
+}
+/*Trending */
+.trending_product{
+    font-size: 15px;
+    color:#000;
+}
